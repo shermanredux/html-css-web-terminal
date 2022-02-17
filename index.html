@@ -24,7 +24,7 @@
 <body class="body">
 
     <div class="title">
-        The Sherminall
+        The Sherminal
     </div>
 
     <div class="frame-container">
@@ -49,12 +49,12 @@
             <div class="input-container">
                 <div class="input-box">
                     <span class="prefix">[sherm@sherm-desktop:~] > </span>
-                    <input id="input" type="tel" placeholder="To get started, use command help."/>
-                  
+
                     <form action="PayslipServlet" method="get">
-                        Last name:    <input type="text" name="help" id="help"><br/>
-                        <span id="result"></span>
+                        <input type="text" name="help" id="help" placeholder="To get started, use command help."/>
                         <br>
+                            <div class='command' id="result"></div>
+                        </br>
                         <input type="button" value="Submit" onClick="pr()">
                       </form>
               
