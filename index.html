@@ -3,6 +3,7 @@
 
 <header class="header">
         <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script type="text/javascript" src="script.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,14 +17,14 @@
         <link rel="icon" type="image/x-icon" href="ubuntu-logo.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </header>
 
 <body class="body">
 
     <div class="title">
-        The Sherm Term(inal)
+        The Sherminal
     </div>
 
     <div class="frame-container">
@@ -36,7 +37,7 @@
             </div>
 
             <div class="second-header-container">
-                File   Edit   View   Search   Terminal   Help
+                File   Edit   View   Search   Terminal   Help   Blys
             </div>
 
             <div class="feed-container">
@@ -46,6 +47,24 @@
             </div>
 
             <div class="input-container">
+                <div class="input-box">
+                    <span class="prefix">[sherm@sherm-desktop:~] > </span>
+                    <input id="input" type="tel" placeholder="To get started, use command help."/>
+                  
+                    <form action="PayslipServlet" method="get">
+                        Last name:    <input type="text" name="help" id="help"><br/>
+                        <span id="result"></span>
+                        <br>
+                        <input type="button" value="Submit" onClick="pr()">
+                      </form>
+              
+                      <script>
+                        function pr() {
+                          document.getElementById("result").innerHTML = document.getElementById('help').value;
+                        }
+                      </script>
+                
+                </div>
 
             </div>
         </div>

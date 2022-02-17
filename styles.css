@@ -80,3 +80,52 @@
     margin-top: 1.2%;
     text-indent: 2px;
 }
+
+.box {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    position: fixed;
+    bottom: 0.1px;
+}
+
+.input-box {
+    display: flex;
+    width:100%;
+    box-sizing: border-box;
+    height: 40px;
+    position: fixed;
+    background: #2d0922;
+    border: 2px solid #636262;
+    padding-left: 0.5rem;
+    font-family: sans-serif;
+    bottom: 0.1px;
+  }
+  
+.input-box .prefix {
+    text-align: center;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    color:#6ecf33;
+    font-weight: 800;
+    margin-top: 1.7%;
+    text-indent: 2px;
+  }
+  
+  .input-box input {
+    flex-grow: 1;
+    background: #2d0922;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    bottom: 0.1px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    color:#6ecf33;
+    text-indent: 2px;
+  }
+  
+  .input-box:focus-within {
+    border-color: #777;
+  }
